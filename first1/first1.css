@@ -1,0 +1,110 @@
+body{
+  margin-top: 20px;
+
+}
+.head{
+  margin-bottom: 20px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+a:hover {
+  color:rgb(71, 59, 59);
+  text-decoration: none;
+}
+.head_title{
+  padding: 10px 5px 10px 5px;
+  background-color: crimson;
+  color:white;
+}
+.head_menu{
+  float: right;
+}
+.head_menuicon{
+  color: black;
+  margin-right: 5px;
+}
+.head_img{
+  background-image: url(sample02.jpg);
+  height: 500px;
+  color: white;
+  position: relative;
+}
+.head_text{
+  position: absolute;
+  top: 50%; /*親のtopから50%*/
+  left: 50%; /*親のleftから50%*/
+  transform: translateY(-50%) translateX(-50%); /*子要素自体の大きさを考慮*/
+  margin: 0; /*margin:0を入れる*/
+  padding: 10px 0; /*左右のpaddingを0にする*/
+}
+.head_text {
+  text-align: center;
+}
+article{
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 50px;
+  position: relative;
+}
+.article_top{
+  text-align: center;
+  margin: 30px;
+}
+.article_content{
+  display: flex;
+}
+.article{
+  width: 30%;
+  margin-right: 5%;
+}
+.article img{
+  width: 100%;
+}
+.article h5{
+  font-size: 13px;
+  margin: 5px 10px 40px 10px;
+}
+.article p{
+  position: absolute;
+  top: 100%;
+}
+footer{
+  text-align: center;
+  color: white;
+}
+.footer_img{
+  background-image: url(sample02.jpg);
+  height: 500px;
+  padding: 30px;
+}
+.footer_img h1{
+  margin: 0;
+}
+.footer_img a{
+  color: white;
+  background-color: crimson;
+  padding: 1%;
+}
+.footer_text{
+  margin: 5%;
+}
+.end{
+  background-color: black;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+@media screen and (max-width:375px){
+  .head {
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  article{
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  .article{
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+}
